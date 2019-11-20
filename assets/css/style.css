@@ -4,19 +4,49 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
+a:link {
+  color:#777777;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color:#777777;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color:  #4aaaa5;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color:#777777;
+  text-decoration: none;
+}
+
 p{
   color:#777777;
 }
 
+#header-wrapper{
+   border-bottom: 1px solid #777777;
+}
 header{
   margin: 0 auto;
   background-color: #ffffff;
-  border-bottom-color: #cccccc;
+  /* border-bottom-color: #cccccc; */
+  /* border-bottom-width: 10px; */
   width:960px; 
-  /* border: 2px solid red; */
   display:flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header a{
+  padding-right: 20px;
 }
 
 hr{
@@ -28,7 +58,6 @@ input[type=submit] {
   color: #ffffff;
   padding: 10px 20px;
   border: none;
-  /* border-radius: 4px; */
   cursor: pointer;
 }
 
@@ -73,19 +102,27 @@ input[type=submit] {
   .item{
     width: 200px;
     height: 150px;
-    background: lightsalmon;
-       /* width: 32%; */
-      /* padding-bottom: 32%; Same as width, sets height */
-      margin-bottom: 2%; /* (100-32*3)/2 */
-      position: relative;
+    margin-bottom: 2%; /* (100-32*3)/2 */
+    position: relative;
   }
 
-    .item img {
-        margin: 10px;
+    .grid img {
+        margin: 5px;
         width: 200px;
         height: 150px;
       }
-    
+    #message{
+      width: 100%;
+      height: 100px;
+    }
+
+    #contact-name{
+      width: 100%;
+    }
+
+    #email{
+      width: 100%;
+    }
   
 
   .grid{
@@ -93,7 +130,9 @@ input[type=submit] {
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
-  }
+    width: 500px;
+    border-color: lime;
+    }
   
 
   #about-me{
@@ -109,6 +148,7 @@ input[type=submit] {
     width: 200px;
     height: 200px;
     padding-right: 20px;
+    border: #666666;
   }
 
   #footer{
@@ -119,6 +159,7 @@ input[type=submit] {
     padding-bottom:5px ;
     color: #ffffff;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    margin-top: -40px;
   }
 
   #contact-form{
